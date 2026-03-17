@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix – Assista onde quiser</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo">NETFLIX</div>
+      <div class="nav-actions">
+        <select class="lang-select">
+          <option>🌐 Português</option>
+          <option>English</option>
+          <option>Español</option>
+        </select>
+        <a href="#" class="btn-signin">Entrar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg">
+      <div class="film-strip" id="filmStrip"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Filmes · Séries · Documentários
+      </div>
+      <h1 class="hero-title">
+        Filmes, séries e<br/>muito mais.<br/>
+        <span class="hero-title-accent">Sem limites.</span>
+      </h1>
+      <p class="hero-sub">Assista em qualquer lugar. Cancele quando quiser.</p>
+      <p class="hero-cta-text">Pronto para assistir? Insira seu e-mail para criar ou reiniciar sua assinatura.</p>
+      <div class="hero-form">
+        <input type="email" placeholder="Endereço de e-mail" class="hero-input" />
+        <button class="btn-cta" id="ctaBtn">
+          Comece já
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- FEATURE 1 -->
+  <section class="feature feature-right">
+    <div class="feature-text">
+      <h2>Aproveite na TV.</h2>
+      <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, reprodutores de Blu-ray e muito mais.</p>
+    </div>
+    <div class="feature-visual">
+      <div class="tv-mockup">
+        <div class="tv-screen">
+          <div class="tv-content">
+            <div class="play-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <div class="tv-shimmer"></div>
+          </div>
+        </div>
+        <div class="tv-stand"></div>
+        <div class="tv-base"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- FEATURE 2 -->
+  <section class="feature feature-left">
+    <div class="feature-visual">
+      <div class="phone-mockup">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-content">
+            <div class="phone-thumbnail"></div>
+            <div class="phone-info">
+              <div class="phone-title-bar"></div>
+              <div class="phone-sub-bar"></div>
+            </div>
+            <div class="download-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Baixando...
+            </div>
+          </div>
+        </div>
+        <div class="phone-home-bar"></div>
+      </div>
+    </div>
+    <div class="feature-text">
+      <h2>Baixe suas séries para assistir offline.</h2>
+      <p>Salve seus títulos favoritos e sempre tenha algo para assistir — mesmo sem internet.</p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- FEATURE 3 -->
+  <section class="feature feature-right">
+    <div class="feature-text">
+      <h2>Assista em todo lugar.</h2>
+      <p>Transmita filmes e séries ilimitados no seu celular, tablet, notebook e TV.</p>
+    </div>
+    <div class="feature-visual">
+      <div class="devices-mockup">
+        <div class="device-laptop">
+          <div class="laptop-screen"><div class="laptop-inner"></div></div>
+          <div class="laptop-body"></div>
+        </div>
+        <div class="device-tablet">
+          <div class="tablet-screen"><div class="tablet-inner"></div></div>
+        </div>
+        <div class="device-phone-small">
+          <div class="phone-s-screen"></div>
+          <div class="phone-s-home"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- PLANS -->
+  <section class="plans-section">
+    <h2 class="plans-title">Escolha o seu plano</h2>
+    <p class="plans-sub">Assista em quantas telas quiser. Planos a partir de R$ 18,90/mês.</p>
+    <div class="plans-grid" id="plansGrid">
+      <div class="plan-card" data-plan="standard-ads">
+        <div class="plan-name">Standard com anúncios</div>
+        <div class="plan-price">R$ 18,90<span>/mês</span></div>
+        <ul class="plan-features">
+          <li>✓ Full HD (1080p)</li>
+          <li>✓ 2 telas simultâneas</li>
+          <li>✓ Anúncios incluídos</li>
+          <li>✗ Downloads</li>
+        </ul>
+        <button class="plan-btn">Assinar</button>
+      </div>
+      <div class="plan-card plan-card--featured" data-plan="standard">
+        <div class="plan-badge">POPULAR</div>
+        <div class="plan-name">Standard</div>
+        <div class="plan-price">R$ 34,90<span>/mês</span></div>
+        <ul class="plan-features">
+          <li>✓ Full HD (1080p)</li>
+          <li>✓ 2 telas simultâneas</li>
+          <li>✓ Sem anúncios</li>
+          <li>✓ Downloads (2 dispositivos)</li>
+        </ul>
+        <button class="plan-btn plan-btn--featured">Assinar</button>
+      </div>
+      <div class="plan-card" data-plan="premium">
+        <div class="plan-name">Premium</div>
+        <div class="plan-price">R$ 45,90<span>/mês</span></div>
+        <ul class="plan-features">
+          <li>✓ Ultra HD (4K) + HDR</li>
+          <li>✓ 4 telas simultâneas</li>
+          <li>✓ Áudio espacial</li>
+          <li>✓ Downloads (6 dispositivos)</li>
+        </ul>
+        <button class="plan-btn">Assinar</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Perguntas frequentes</h2>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q">O que é a Netflix? <span class="faq-icon">+</span></button>
+        <div class="faq-a">A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes, animes, documentários e muito mais em milhares de dispositivos conectados à internet.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Quanto custa a Netflix? <span class="faq-icon">+</span></button>
+        <div class="faq-a">Assista à Netflix no seu smartphone, tablet, Smart TV, notebook ou dispositivo de streaming, tudo por uma taxa mensal fixa. Os planos variam de R$ 18,90 a R$ 45,90 por mês.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Onde posso assistir? <span class="faq-icon">+</span></button>
+        <div class="faq-a">Assista em qualquer lugar e a qualquer hora. Faça login na sua conta Netflix em netflix.com a partir de um computador pessoal ou em qualquer dispositivo com acesso à internet.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Como faço para cancelar? <span class="faq-icon">+</span></button>
+        <div class="faq-a">A Netflix é flexível. Não há contratos incômodos nem compromissos. Você pode cancelar sua conta facilmente online em dois cliques. Não há taxas de cancelamento — você pode iniciar ou interromper sua assinatura a qualquer momento.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">A Netflix é boa para crianças? <span class="faq-icon">+</span></button>
+        <div class="faq-a">O plano Família da Netflix inclui controles parentais para que você possa limitar os títulos que crianças e adolescentes podem assistir. A experiência infantil é incluída na assinatura da Netflix para que as crianças possam se divertir com histórias e personagens favoritos.</div>
+      </div>
+    </div>
+    <div class="faq-cta">
+      <p>Pronto para assistir? Insira seu e-mail para criar ou reiniciar sua assinatura.</p>
+      <div class="hero-form" style="max-width:580px;margin:0 auto">
+        <input type="email" placeholder="Endereço de e-mail" class="hero-input" />
+        <button class="btn-cta">
+          Comece já
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Dúvidas? Ligue <a href="#">0800 591 5516</a></p>
+      <div class="footer-links">
+        <a href="#">Perguntas frequentes</a>
+        <a href="#">Centro de ajuda</a>
+        <a href="#">Conta</a>
+        <a href="#">Mídia</a>
+        <a href="#">Relações com investidores</a>
+        <a href="#">Emprego</a>
+        <a href="#">Formas de assistir</a>
+        <a href="#">Termos de uso</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Preferências de cookies</a>
+        <a href="#">Informações corporativas</a>
+        <a href="#">Fale conosco</a>
+      </div>
+      <select class="lang-select lang-select--footer">
+        <option>🌐 Português</option>
+        <option>English</option>
+        <option>Español</option>
+      </select>
+      <p class="footer-copy">Netflix Brasil</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
